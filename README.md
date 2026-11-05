@@ -1,5 +1,7 @@
 # Ever After Events
 
+**[Watch the latest moving hero concept](preview/README.md)** — original 360-degree scene, with a looping preview and MP4. This is the first revised visual draft.
+
 A complete, responsive luxury wedding planning website built with React, Vite and Three.js. The company name is illustrative. All content and assets are local; the deployed website makes no third-party asset requests.
 
 ## Run locally
@@ -49,7 +51,7 @@ The browser configuration uses system Chromium at `/usr/bin/chromium`. On anothe
 
 See [ASSETS.md](ASSETS.md) for source and license details. The portfolio is explicitly an editorial inspiration collection, not invented client work. Replace it with authorised company photography before representing actual events. No testimonials, awards, client names or company history have been invented.
 
-The 3D scene is original procedural geometry rather than a scanned floral model. Its fidelity and frame rate depend on the device's GPU; lower-powered devices get a lighter scene. No reference screenshots were present in the repository, so the visual direction follows the written brief.
+The 3D scene is original procedural geometry rather than a scanned floral model. Its fidelity and frame rate depend on the device's GPU; lower-powered devices get a lighter scene. The first build followed the written brief. The revised concept uses the later salon screenshots as visual references for rotation and staging; those screenshots are not embedded or copied into the website.
 
 This cloud task already has an isolated checkout. Use this checkout; no Git worktree is needed.
 
@@ -58,3 +60,11 @@ This cloud task already has an isolated checkout. Use this checkout; no Git work
 Run `npm run build:standalone` to generate `standalone/Ever-After-Events.html`. Download that HTML file and double-click it in a modern browser. All JavaScript, styles, photographs and fonts are embedded in the file. The 3D scene, gallery, navigation and local inquiry download work without a development server or an Internet connection. WebGL still requires a capable browser; reduced-motion settings intentionally freeze the scene.
 
 The managed browser in this cloud environment blocks `file://` navigation by administrator policy. The generated single-file build is validated through a local static server with all of its content embedded. If your browser also restricts local HTML, serve the containing directory using any static HTTP server.
+
+## Revised 3D hero concept
+
+The hero is now built in `src/CinematicScene.js`. It uses curved petal meshes in overlapping spiral whorls, arrangements on the front and back of the arch, a three-dimensional support frame, silk surfaces with procedural microtexture, glass candle vessels and independent jewellery motion. The full installation completes a continuous turn in 32 seconds; pause and reduced-motion controls retain a still scene.
+
+`preview/Revised-Hero-Concept.mp4` is a complete turntable concept rendered from the actual WebGL geometry. Its playback is accelerated for a short review of all sides. It is an original, procedural 3D draft, rather than a scan of a real floral installation. The user's salon screenshots were used only to understand the intended visual direction and were not copied into the site or any asset.
+
+For deterministic concept captures during development, open `/tools/hero-concept.html` through Vite and call `window.drawConcept(timeInSeconds)` in browser automation. `/tools/export-scene.html` exports the original geometry for further work in a 3D editor. These development tools are not included in the production application bundle.

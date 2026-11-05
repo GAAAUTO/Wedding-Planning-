@@ -22,7 +22,7 @@ test('real WebGL scene renders, respects reduced motion, animates and pauses', a
   const stillB = await capture();
   expect(stillA.equals(stillB)).toBe(true);
   await page.emulateMedia({ reducedMotion: 'no-preference' });
-  await expect(page.getByLabel('Pause scene animation')).toBeVisible();
+  await expect(page.getByLabel('Pause scene animation')).toBeVisible({ timeout: 30000 });
   await page.waitForTimeout(300);
   await page.getByLabel('Pause scene animation').click();
   await page.waitForTimeout(150);

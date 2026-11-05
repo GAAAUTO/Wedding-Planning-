@@ -26,3 +26,7 @@ All images have been resized and compressed to WebP, collectively approximately 
 - All floral, ring, gemstone, fabric, candle and particle geometry, the ornamental flower mark and the favicon are built in this repository.
 
 No external model, texture API, photo API, map, analytics service or remote font service is needed at runtime.
+
+## Revised hero
+
+The revised curved petals, flowers, support structure, fabrics, jewellery and procedural surface maps in `src/CinematicScene.js` are original geometry and textures created for this project. No assets from the public model repositories inspected during research were incorporated. The reference screenshots have not been used as site images, textures or animation frames.

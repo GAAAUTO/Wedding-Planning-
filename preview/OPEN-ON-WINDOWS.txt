@@ -8,7 +8,9 @@ EVER AFTER EVENTS — WINDOWS PREVIEW
 
 This is the full interactive website. No installation, server or Internet connection is required after downloading.
 
-Walkthrough.mp4 shows the moving 3D hero, every page section and the gallery. Open it with Media Player or VLC.
+Revised-Hero-Concept.mp4 shows the rebuilt 3D floral installation turning through all sides. Open it with Media Player or VLC. It is a short, accelerated turntable for reviewing the revised direction.
+
+Walkthrough.mp4 is the earlier website revision, retained for comparison.
 
 If your Windows accessibility settings enable reduced motion, the website intentionally freezes the scene. Turn that preference off to see continuous animation. If the browser cannot run WebGL, it shows a photograph instead.
 

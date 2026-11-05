@@ -1,0 +1,8 @@
+<!doctype html><html><body style="margin:0"><div id="scene" style="width:1000px;height:800px"></div><script type="module">
+import { buildScene } from '/src/CinematicScene.js';
+import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
+const result = buildScene(document.getElementById('scene'), false);
+result.render(0, false);
+const exporter = new GLTFExporter();
+exporter.parse(result.exportRoot, data => { window.sceneData = Array.from(new Uint8Array(data)); window.sceneDone = true; }, error => { window.sceneError=String(error); }, { binary: true, onlyVisible: true });
+</script></body></html>

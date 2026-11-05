@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ever After — original 3D concept</title><style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#211b17;color:#ddc9a5}#scene{position:absolute;inset:0;background:radial-gradient(ellipse at 52% 35%,#5a4933 0%,#2c241d 52%,#17130f 100%)}.top,.bottom{position:absolute;left:0;right:0;text-align:center;z-index:2;pointer-events:none}.top{top:32px;font:11px Georgia,serif;letter-spacing:5px}.top em{display:block;letter-spacing:.5px;font-size:21px;margin-top:12px;font-weight:400}.bottom{bottom:30px;font:8px Arial,sans-serif;letter-spacing:2.5px}canvas{display:block}</style></head><body><div id="scene"></div><div class="top">EVER AFTER EVENTS<em>A study in forever.</em></div><div class="bottom">ORIGINAL 3D CONCEPT · ROTATING FLORAL INSTALLATION</div><script type="module">
+import {buildScene} from '/src/CinematicScene.js';
+const scene=buildScene(document.getElementById('scene'),false,{studio:true});
+window.drawConcept=time=>scene.render(time,true);
+window.drawConcept(0);window.conceptReady=true;
+</script></body></html>
