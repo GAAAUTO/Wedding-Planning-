@@ -1,0 +1,17 @@
+EVER AFTER EVENTS — WINDOWS PREVIEW
+
+1. On GitHub, select the ever-after-website branch.
+2. Click the green Code button, then Download ZIP.
+3. In Windows File Explorer, right-click the downloaded ZIP and choose Extract All.
+4. Open the extracted folder, then open the preview folder.
+5. Double-click Ever-After-Events.html. Choose Chrome, Edge or Firefox if Windows asks.
+
+This is the full interactive website. No installation, server or Internet connection is required after downloading.
+
+Walkthrough.mp4 shows the moving 3D hero, every page section and the gallery. Open it with Media Player or VLC.
+
+If your Windows accessibility settings enable reduced motion, the website intentionally freezes the scene. Turn that preference off to see continuous animation. If the browser cannot run WebGL, it shows a photograph instead.
+
+The consultation form downloads your inquiry locally. No email/submission backend is connected.
+
+All editable source files are in the repository root, src/, public/, scripts/ and tests/. Run npm ci and npm run dev with Node.js 22.14 or newer to develop the site.
